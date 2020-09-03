@@ -1,11 +1,15 @@
-# Commands
+# Django Test
 
-## Virtual Env
+Testing how to setup a Django project.
 
-Enter: `django-env\Scripts\activate.bat`
-Exit: `deactivate`
+## Getting Started
 
-## Server
+### Virtual Env
 
-Run: `python manage.py runserver`
-Exit: `Ctrl + C`
+* Enter: `django-env\Scripts\activate.bat`
+* Exit: `deactivate`
+
+### Server
+
+* Run: `python manage.py runserver`
+* Exit: `Ctrl + C`
