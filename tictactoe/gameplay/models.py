@@ -9,6 +9,9 @@ class Game(models.Model):
     last_active = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=1, default='F')
 
+    def __str__(self):
+        return "{0} vs {1}".format(self.first_player, self.second_player)
+
 
 class Move(models.Model):
     x = models.IntegerField()
@@ -16,3 +19,6 @@ class Move(models.Model):
     comment = models.CharField(max_length=300, blank=True)
     by_first_player = models.BooleanField()
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return "({0}, {1}) by first player: {2}".format(self.x, self.y, self.by_first_player)
