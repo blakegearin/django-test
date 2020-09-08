@@ -1,6 +1,6 @@
 # Django Test
 
-Testing how to setup a Django project.
+Testing how to setup and run a simple Django project.
 
 ## Getting Started
 
@@ -24,3 +24,23 @@ Testing how to setup a Django project.
 ### Apps
 
 * Create: `python manage.py startapp <NAME>`
+
+### Admin Site
+
+* Create superuser: `python manage.py createsuperuser`
+
+### Shell
+
+* Open: `python manage.py shell`
+
+### Model API
+
+* Manager: `<CLASS>.objects`
+* Get all: `<CLASS>.objects.all()`
+* Get single instance: `<CLASS>.objects.get(<FIELD>=<VALUE>)`
+* Get certain objects that include field value: `<CLASS>.filter(<FIELD>=<VALUE>)`
+* Get certain objects that exclude field value: `<CLASS>.exclude(<FIELD>=<VALUE>)`
+* Save: `<OBJECT>.save()`
+* Delete: `<OBJECT>.delete()`
+
+**Note:** If the `<FIELD>` is a foreign key the format will be `<FIELD>__<CLASS>`
